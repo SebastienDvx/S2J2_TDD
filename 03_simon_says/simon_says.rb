@@ -23,15 +23,5 @@ def shout(message)
   message.upcase
 end
 
-def titleize(string)
-  do_not_capitalize = ['a', 'an', 'and', 'in', 'of', 'or', 'over', 'the']
-  output = string.split(/ /).each_with_index.map do |word, index|
-    if index > 0 && (do_not_capitalize.include? word)
-      word
-    else
-      word.capitalize
-    end
-  end
-  output.join(' ')
-  
-end
+
+# end
