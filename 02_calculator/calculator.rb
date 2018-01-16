@@ -13,18 +13,14 @@ def sum(array_nb)
   somme
 end
 
-def multiply(array_nb_mult)
-  mult = 0
-  array_nb_mult.each do |nb_mult|
-    mult *= nb_mult
-    return mult
-  end
+def multiply(*args)
+  args.inject(:*)
 end
 
-puts multiply(1,2,3)
+def power(a, b)
+  a ** b
+end
 
-# def multiply(array_nb_mult)
-#   mult = 0
-#   array_nb_mult.each { |nb| mult *= nb }
-#   mult
-# end
+def factorial(number)
+  (1..number).reduce(1, :*) 
+end
