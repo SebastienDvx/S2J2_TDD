@@ -104,6 +104,7 @@ require "hello"
 describe "the hello function" do
   it "says hello" do
     expect(hello).to eq("Hello!")
+    # S'attend à ce que la fonction hello retourne la string "Hello!"
   end
 end
 
