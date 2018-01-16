@@ -23,5 +23,7 @@ def shout(message)
   message.upcase
 end
 
-
-# end
+def titleize(string)
+  res = string.split(" ").each_with_index.map { |mot, index| mot.capitalize }
+  res.join(" ")
+end
